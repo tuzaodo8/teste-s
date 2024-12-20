@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/send-email" method="post">
+        <div class="conteniner">
+            <div id="box">
+                <div class="empresa">
+                    <label for="firstname">nome da empresa</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <div class="nome">
+                    <label for="nome-pesoal">qual e seu nome?</label>
+                    <input type="text" id="nome-pesoal" name="nome-pesoal">
+                </div>
+                <div class="contato">
+                    <label for="email"> e-mail</label>
+                    <input type="email" placeholder="exemplo@gmail.com.br" name="email" id="email"*>
+                </div>
+                <div class="telefone">
+                    <label for="telefone">telefone</label>
+                    <input type="number" id="telefone" name="telefone">
+                </div>
+                <div>
+                    <label for="segmento">em qual segmento atua</label>
+                    <input type="text" id="segmento" name="segmento">
+                </div>
+                <div class="funcionarios">
+                    <h6>possui funcionários?</h6>
+                    <label for="sim">sim</label>
+                    <input type="radio" name="funcionario" id="sim" value="sim">
+                    <label for="nao">não</label>
+                    <input type="radio" name="funcionario" id="nao" value="nao"> 
+                </div>
+                <div class="dinheiro">
+                    <label for="faturamento">qual o faturamento</label>
+                    <input type="number" name="faturamento" id="faturamento" min="0">
+                </div>
+                <div class="forma-contato">
+                    <p>qual forma de contato gostaria?</p>
+                    <input type="button" name="contato" value="e-mail" id="e-mail">
+                    <input type="button" id="telefone" name="whatszap" value="whatszap">
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Enviar" onclick="enviar()">
+                </div>
+                <div class="resposta"></div>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+    <script src="server.js"></script>
+    <!--<script src="send-email:3000"></script>-->
+</body>
+</html>
